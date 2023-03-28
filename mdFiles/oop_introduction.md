@@ -89,10 +89,8 @@ In dynamic binding, the code to be executed in response to the function call is 
 Ex. Two class one base and another derived, print function availabe in both.  
 After creating two objects (one of base and another of derived) calling print function with base and derived class object.  
 both time the function from base class will get executed.  
-To resolve this problem virtual classes are used. 
+To resolve this problem virtual classes are used.
 
 ### Message Passing
 
 Objects communicate with one another by sending and receiving information. A message for an object is a request for the execution of a procedure and therefore will invoke a function in the receiving object that generates the desired results. Message passing involves specifying the name of the object, the name of the function, and the information to be sent.
-
-

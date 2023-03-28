@@ -50,7 +50,7 @@ Syntex:
 
     pointer-variable = new data-type[size];
 
-__delere operator:__
+__delete operator:__
 
 To deallocate dynamically allocated memory.
 
@@ -68,3 +68,23 @@ To free the dynamically allocated array pointed by pointer variable, use the fol
 
 ```
 
+This operator calls the destructor after it destroys the allocated memory also It is faster than free(). free() function only frees the memory from the heap. It does not call the destructor and comparatively slower than delete as it is a function.
+
+## Type casting operators
+
+C++ supports following 4 types of casting operators:
+
+1. const_cast
+2. static_cast
+3. dynamic_cast
+4. reinterpret_cast
+
+__const_cast:__
+
+const_cast is used to cast away the constness of variables.
+
+- const_cast can be used to change non-const class members inside a const member function.
+- const_cast can be used to pass const data to a function that doesn’t receive const.
+- const_cast is considered safer than simple type casting. It’safer in the sense that the casting won’t happen if the type of cast is not same as original object.
+  
+__Examples Remaining__

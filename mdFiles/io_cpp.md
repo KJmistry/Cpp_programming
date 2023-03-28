@@ -59,4 +59,14 @@ A buffer flush is the transfer of computer data from a temporary storage area to
 - cin/cout  -> for taking input from user/to display data
   - cin will return false when entered input is differ from storing variable datatype.
 - cerr(un-buffered)/clog(buffered) -> for printing err msg
+
+## Difference Between std::endl vs \n in C++
   
+std::cout << std::endl inserts a new line and flushes the stream(output buffer), whereas std::cout << “\n” just inserts a new line.  
+(std::cout << std::endl; can be said equivalent to std::cout << ‘\n’ << flush;)
+
+__Other Differences:__
+
+__endl:__ It is a manipulator.It doesn’t occupy any memory.
+
+__\n:__ It is a character.It occupies 1 byte memory as it is a character.
