@@ -134,7 +134,7 @@ Find matching substring with in a string if available
 - A variable can be declared as a reference by putting ‘&’ in the declaration.
 - Variables associated with reference variables can be accessed either by its name or by the reference variable associated with it.
 
-syntex:
+syntax:
 
     data_type &ref = variable;
 
@@ -145,33 +145,3 @@ example:
     ref = 20;                   // Value of x is now changed to 20
     x = 30;                     // Value of x is now changed to 30
 ```
-
-### Application of Reference in Cpp
-
-- Modify the passed parameters in a function
-- Avoiding a copy of large structures (if we pass without reference the new copy will be creared)
-- In For Each Loop to modify all objects
-- For Each Loop to avoid the copy of objects
-- function can be accessed using references
-
-### Difference Between Reference and Pointer
-
-- A pointer can be declared as void but a reference can never be void For example
-- The pointer variable has n-levels/multiple levels of indirection i.e. single-pointer, double-pointer, triple-pointer. Whereas, the reference variable has only one/single level of indirection.
-- Reference variables cannot be updated.
-- Reference variable is an internal pointer. 
-  (Since it can access the same memory location** as the variable of which it is a reference, a reference variable is internally implemented as a pointer.)
-- Declaration of a Reference variable is preceded with the ‘&’ symbol __(***but do not read it as “address of”)__.
-
-### Limitations of References
-
-- Once a reference is created, it cannot be later made to reference another object; it cannot be reset. This is often done with pointers.
-- References cannot be NULL. Pointers are often made NULL to indicate that they are not pointing to any valid thing.
-- A reference must be initialized when declared. There is no such restriction with pointers.
-
-Due to the above limitations, references in C++ cannot be used for implementing data structures like Linked List, Tree, etc.
-
-### Advatanges of using Reference Variables
-
-__Safer__: Since references must be initialized, wild references like wild pointers are unlikely to exist.  
-__Easier to use__: References don’t need a dereferencing operator to access the value. Members of an object reference can be accessed with the dot operator (‘.’), unlike pointers where the arrow operator (->) is needed.

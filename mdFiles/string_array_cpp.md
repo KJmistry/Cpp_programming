@@ -6,7 +6,7 @@
 
 A raw string literal is a string in which the escape characters like ‘ \n, \t, or \” ‘ of C++ are not processed.
 
-Syntex:
+Syntax:
 
     R "delimiter( raw_characters )delimiter" // delimiter is the end of logical entity
 
@@ -29,7 +29,7 @@ The C++ getline() is a standard library function that is used to read a string o
 
 In C++, stream classes support line-oriented functions, getline() and write() to perform input and output functions respectively.
 
-Syntex:
+Syntax:
 
     cin.getline(char*, int size, char='\n')                  // (buffer, stream_size, delimiter) By default delimiter = '\n' 
     getline (istream& is, string& str, char delimiting);     // (inputfrom, buffer to store, delimiter)
@@ -141,7 +141,7 @@ Synex:
 
 __2. Using std::string:__
 
-Syntex:
+Syntax:
 
     std::string str = "This is String";
 
@@ -159,7 +159,7 @@ __Cases where you might prefer char* over std:string:__
 
 __3. Using char[]:__
 
-Syntex:
+Syntax:
 
     char str[] = "This is GeeksForGeeks";
 

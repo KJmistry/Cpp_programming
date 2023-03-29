@@ -22,7 +22,7 @@ __new operator__:
 
 The new operator denotes a request for memory allocation on the Free Store. If sufficient memory is available, a new operator initializes the memory and returns the address of the newly allocated and initialized memory to the pointer variable.
 
-syntex:
+syntax:
 
     pointer-variable = new data-type;
 
@@ -40,13 +40,13 @@ int *p = new int;
 
 __Initialize memory:__ We can also initialize the memory for built-in data types using a new operator. For custom data types, a constructor is required (with the data type as input) for initializing the value.
 
-Syntex:
+Syntax:
 
     pointer-variable = new data-type(value);
 
 __Allocate a block of memory:__ a new operator is also used to allocate a block(an array) of memory of type data type.
 
-Syntex:
+Syntax:
 
     pointer-variable = new data-type[size];
 
@@ -54,7 +54,7 @@ __delete operator:__
 
 To deallocate dynamically allocated memory.
 
-Syntex:
+Syntax:
 
     delete pointer-variable;
 

@@ -110,23 +110,18 @@ Example:
 #include <iostream>
 using namespace std;
 
-// A sample void function
-void work()
+void work()           // A sample void function
 {
     cout << "The void function has returned a void() !!! \n";
 }
 
-// Driver void() returning void work()
 void test()
 {
-    // Returning void function
-    return work();
+    return work();    // Returning void function
 }
 
-// Driver Code
 int main()
 {
-    // Calling void function
     test();
     return 0;
 }
@@ -139,14 +134,11 @@ int main()
 #include <iostream>
 using namespace std;
 
-// Driver void() returning a void value
 void test()
 {
     cout << "Hello";
-    // Returning a void value
-    return (void)"Doesn't Print";
+    return (void)"Doesn't Print";  // Returning a void value
 }
-// Driver Code
 int main()
 {
     test();
@@ -154,3 +146,27 @@ int main()
 }
 ```
 
+## std::tuple, std::pair | Returning multiple values from a function using Tuple and Pair in C++
+
+One method to do the same is by using pointers, structures or global variables. There is an alternative to achieve same by using tuples (for returning multiple values) and pairs (for two values).
+
+We can declare the function with return type as pair or tuple (whichever is required) and can pack the values to be returned and return the packed set of values. The returned values can be unpacked in the calling function.
+
+__Tuple:__
+
+- A tuple is an object capable to hold a collection of elements where each element can be of a different type.
+- Class template std::tuple is a fixed-size collection of heterogeneous values
+
+__Pair:__
+
+- This class couples together a pair of values, which may be of different types
+- A pair is a specific case of a std::tuple with two elements
+
+Refer [tuple.cpp](../tuple.cpp) code.
+
+Note:
+
+    In C++, func() is equivalent to func(void)
+    In C, func() is equivalent to func(…)
+
+__---------------Remaining From Fuctors----------------__
