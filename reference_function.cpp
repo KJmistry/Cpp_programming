@@ -3,7 +3,8 @@ using namespace std;
 
 int& fun(int a)
 {   
-    static int x = a;
+    static int x = a;       // wont work if static is removed (tying to access stack address!)
+	// cout << &x << endl;
 	return x;
 }
 

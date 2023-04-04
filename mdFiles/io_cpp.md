@@ -60,6 +60,10 @@ A buffer flush is the transfer of computer data from a temporary storage area to
   - cin will return false when entered input is differ from storing variable datatype.
 - cerr(un-buffered)/clog(buffered) -> for printing err msg
 
+```
+    cout << setprecision(3) << fixed;   // to set precision of float number in cout  
+```
+
 ## Difference Between std::endl vs \n in C++
   
 std::cout << std::endl inserts a new line and flushes the stream(output buffer), whereas std::cout << “\n” just inserts a new line.  

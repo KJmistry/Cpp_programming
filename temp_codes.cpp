@@ -1,19 +1,16 @@
-// C++ code to demonstrate NaN exception
-#include <cmath>
-#include <iostream>
+#include<iostream>
 using namespace std;
-
-// Driver Code
+void test(float s,float t)
+{
+	cout << "Function with float called ";
+}
+void test(int s,int t)
+{
+	cout << "Function with int called ";
+}
 int main()
 {
-	float a = 2, b = -2;
-
-	// Prints the number (1.41421)
-	cout << 2/0 << endl;
-
-	// Prints "nan" exception
-	// sqrt(-2) is complex number
-	// cout << sqrt(b) << endl;
-
+	test(3.5f, 5.6f); // Added suffix "f" to both values to
+					// tell compiler, it's a float value
 	return 0;
 }
