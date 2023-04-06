@@ -30,6 +30,8 @@ public:
 
 int main()
 {
+    // C obj;
+    // obj.print();
 	A* obj = new C;
 	obj->print();        
 }
@@ -53,7 +55,7 @@ OBSERVATIONS:
 
 @ If pointer type is A then, print function inside class A must be virtual (creating virtual inside B/C won't have any effect on output)
 
-@ If any class is used as pointer type to create any object and having functions with same name in derived classes.
+@ If any class is used as pointer type to create any object and having functions with same name in derived classes (overridden).
   must declare the function inside that class virtual. 
   
 */

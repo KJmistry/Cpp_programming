@@ -7,7 +7,11 @@ public:
 	virtual void print()
 	{
 		cout << "A called" << endl;
-	} 
+	}
+    virtual ~A()
+    {
+		cout << "A destructor called" << endl;       
+    } 
 };
 
 class B: public A
@@ -16,7 +20,11 @@ public:
 	void print()
 	{
 		cout << "B called" << endl;
-	} 
+	}
+    ~B()
+    {
+		cout << "B destructor called" << endl;       
+    }  
 };
 
 class C: public B
@@ -25,13 +33,20 @@ public:
 	void print()
 	{
 		cout << "C called" << endl;
-	} 
+	}
+    ~C()
+    {
+		cout << "C destructor called" << endl;       
+    }  
 };
 
 int main()
 {
+    // C obj;
+    // obj.print();
 	A* obj = new C;
-	obj->print();        
+	obj->print();
+    delete obj;        
 }
 
 
@@ -53,7 +68,7 @@ OBSERVATIONS:
 
 @ If pointer type is A then, print function inside class A must be virtual (creating virtual inside B/C won't have any effect on output)
 
-@ If any class is used as pointer type to create any object and having functions with same name in derived classes.
+@ If any class is used as pointer type to create any object and having functions with same name in derived classes (overridden).
   must declare the function inside that class virtual. 
   
 */
