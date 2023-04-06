@@ -32,3 +32,15 @@ __Copy constructor:__ called when a new object is created from an existing objec
 __Assignment Operator:__ called when an already initialized object is assigned a new value from another existing object. It does not create a separate memory block. It is a bitwise operator. A bitwise copy gets created, if the Assignment operator is not overloaded. [obj2 = obj1;]
 
 __If a class doesn’t contain pointers, then there is no need to write assignment operator and copy constructor.__
+
+## Default Assignment Operator and References
+
+__The compiler doesn’t create default assignment operator in the following cases:__
+
+1. Class has a non-static data member of a const type or a reference type.
+2. Class has a non-static data member of a type that has an inaccessible copy assignment operator.
+3. Class is derived from a base class with an inaccessible copy assignment operator.
+
+Refer [Example.](../overloading_assignment_operator.cpp)(overloading assignment operator)  
+Refer [Example.](../overloading_cout.cpp)(overloading cout operator)
+Refer [Example.](../overloading_cout.cpp)(overloading array index operator)
