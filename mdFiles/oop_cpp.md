@@ -362,7 +362,6 @@ Refer cpp [Example.](../static_members_in_class.cpp)
 
 __Some interesting facts about static member:__
 
-- Some interesting facts about static member
 - static member functions do not have this pointer.  
 - A static member function cannot be virtual.
 - Member function declarations with the same name and the name parameter-type-list cannot be overloaded if any of them is a static member function declaration.

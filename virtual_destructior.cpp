@@ -44,7 +44,7 @@ int main()
 {
     // C obj;
     // obj.print();
-	A* obj = new C;
+	A* obj = new C();
 	obj->print();
     delete obj;        
 }
