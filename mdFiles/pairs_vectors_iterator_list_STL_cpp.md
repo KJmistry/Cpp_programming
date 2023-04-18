@@ -37,3 +37,50 @@ In vectors the fornt is also possible using insert but insert is comparatively c
 
 Different vector operations [sample program](../list.cpp)
 
+## __dque is also similar to list and vectors__
+
+# Stack 
+
+It is also the container that follows LIFO. There is no mechanism like index.
+
+Different stack operations [sample program](../stack.cpp)
+
+# Queue
+
+Similar as stack but follows FIFO.
+
+Different queue operations [sample program](../queue.cpp)
+
+# Priority Queue
+
+Different priority-queue operations [sample program](../priority_queue.cpp)
+
+# set
+
+Stores unique things and in sorted order.
+
+Different set operations [sample program](../set.cpp)
+
+# Multi set
+
+Similar to set (stores in sorted order) but it allows multiple entries of same element.
+
+Different multiset operations [sample program](../multiset.cpp)
+
+# Unordered set
+
+Similar to set, stores unique entries but not in sorted order.
+
+# Map
+
+Store data with indexing mechinism which is known as key to the perticular value. stores unique keys only and in sorted order.
+
+Different map operations [sample program](../map.cpp)
+
+# Multi map
+
+Similar to map, the only difference that it allwos same key multiple time and in sorted order. (same as set and multiset)
+
+# Unordered map
+
+Similar to map, the only difference that it does not store values in sorted form but stores unique keys.

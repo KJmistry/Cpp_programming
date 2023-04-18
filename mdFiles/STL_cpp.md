@@ -25,6 +25,7 @@ __Adapters:__ Adapters are components that modify the behavior of other componen
 
 Designed to be used on a range of elements. They act on containers and provide means for various operations for the contents of the containers.(sorting,searching,array algorithm,partition etc.)  
 [sort example.](../sort_algorithm_STL.cpp)  
+[sorting array of pair in userdefined pattern.](../custom_sort_pair_STL.cpp)
 [search example.](../search_algorithm_STL.cpp)
 
 ### __2.Containers__
@@ -34,3 +35,13 @@ Containers or container classes store objects and data.
 - Total seven standards “first-class” container classes.
 - Three container adaptor classes.
 - Only seven header files that provide access to these containers or container adaptors.
+
+[Examples](./pairs_vectors_iterator_list_STL_cpp.md) of different types of containers.
+
+### __3.Functors__
+
+The STL includes classes that overload the function call operator. Instances of such classes are called function objects or functors. Functors allow the working of the associated function to be customized with the help of parameters to be passed.
+
+### __4.Iterators__
+
+Iterators are used for working on a sequence of values. They are the major feature that allows generality in STL.
